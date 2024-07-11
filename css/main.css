@@ -1,0 +1,307 @@
+@charset "utd-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: black;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+
+
+
+
+/* 헤더 =======================================================================================================================================*/
+.header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+}
+.header .wrap{
+    width: 100%;
+        max-width: 1380px;
+    margin: 0 auto;
+    display: flex;
+        justify-content: space-between;
+}
+.header > .wrap ul li a{
+    color: white;
+}
+
+/* 헤더 좌측 아이콘 */
+.headerIcon-section{
+    width: 100px;
+    margin: 0 5px;
+    display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+}
+.headerIcon-section li{
+    width: 27px;
+    height: 27px;
+    position: relative;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+.headerIcon-section li a{
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* 헤더 우측(로그인 / 회원가입) */
+.headerLogin-section{
+    width: 170px;
+    display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: flex-end
+}
+.headerLogin-section > li{
+    display: flex;
+}
+.headerLogin-section > li a{
+    font-size: 12px;
+    padding: 0 10px;
+}
+.headerLogin-section > li:first-of-type {
+    height: 13px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+.headerLogin-section > li:last-of-type a{
+    font-size: 14px;
+}
+
+
+
+
+
+/* 헤더 메뉴 ============================================================================================================================================*/
+.header-menu{
+    width: 100%;
+    height: 100px;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.header-menu >.wrap{
+    width: 100%;
+    max-width: 1390px;
+    height: 100%;
+    padding: 0 5px 10px 5px ;
+    margin: auto;
+    display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+}
+/* 좌측메뉴 */
+.leftMenu{
+    width: 400px;
+    height: 17px;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    /* background-color: bisque; */
+}
+.leftMenu > li{
+    width: 30px;
+}
+.leftMenu > li{
+gap: 11px;
+    display: flex;
+    flex-direction: column;
+}
+.leftMenu > li:nth-of-type(4){
+    width: 47px;
+}
+.leftMenu > li> a{
+    font-weight: 600;
+}
+
+/* 우측 메뉴 */
+.rightMenu i {
+    font-size: 25px;
+}
+.rightMenu{
+    height: 25px ;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+}
+.rightMenu > div{
+    width: 30px;
+gap: 11px;
+    display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    /* gap: 11px; */
+}
+
+
+/* 서브메뉴 리스트 */
+/* 1) 생물 */
+.header-menu .wrap > ul > li> a:hover{
+    color: #888;
+}
+.submenu{
+    display: none;
+    width: 400px;
+}
+
+.petList{
+    width: 400px;
+    padding: 15px 20px 10px;
+    display: flex;
+        justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+    border-top: 1px solid rgba(0, 0, 0, 0.18);
+    border-radius: 0 0 7px 7px ;
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+}
+.petList > li > a{
+    font-size: 14px;
+    font-weight: 100px;
+}
+.petList > li:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.petList > li > a > small{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* 더보기(바로가기) 메뉴 */
+.addMenubar ul{
+    display: none;
+}
+
+/* 검색창 */
+#searchWindow{
+    display: none;
+}
+.search-wrap-hover{
+
+    margin: auto;
+    width: 100%;
+    height: 150px;
+    max-width: 1380px;
+    margin: auto;
+    position: absolute;
+        left: 50%;
+    transform: translate(-50%);
+    display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.search-form{
+    width: 450px;
+    height: 44px;
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #00000030;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+}
+/* .clicked{
+    border: 1px solid #000000;
+} */
+/* .search-inputSection{
+    width: 100%;
+    max-width: 280px;
+    border: none;
+    outline: none;
+} */
+.search-inputSection::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+    color: #b4b4b4;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.search-reset{
+    width: 17px;
+    height: 17px;
+    font-size: 0;
+    border: none;
+    background: url("../images/search_reset_button.svg") no-repeat center;
+    background-size:cover; 
+}
+.search-input-click{
+    width: 22px;
+    height: 22px;
+    border: none;
+    background: url("../images/search_input.svg") no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+#searchWindow.openSearchWindow{
+    display: block;
+}
+
+
+
+
+
+
+/* 슬라이드 이미지 / 메인 로고 / 로그인 창 ================================================================================================================== */
+body .slide-section{
+    width: 100%;
+    height: 100%;
+    max-height: 600px;
+    /* background: url("../images/beta.jpg") no-repeat fixed; */
+    /* background-size: ; */
+    background-color: rgb(0, 0, 0);
+}
+.slide-section .wrap{
+    width: 100%;
+    max-width: 1380px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    background: url("../images/banner1beta.png") no-repeat;
+    background-size: cover;
+    display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+        align-items: flex-end;
+}
+/* 메인로고 */
+.slide-section .wrap a img{
+    width: 100%;
+    max-width: 350px;
+    min-width:  100px;
+    margin: 30px 0;
+}
+
+
+
+/* 메인섹션============================================================================================================================================== */
+.introduce{
+
+}
