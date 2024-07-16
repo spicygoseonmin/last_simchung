@@ -48,7 +48,22 @@ a{
 }
 
 
+.fixer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.mover{
+    box-shadow: 0 -4px 4px 1px #00000036;
+    margin-top: 840px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
 
+}
 
 /* 헤더 =======================================================================================================================================*/
 .header{
@@ -342,13 +357,14 @@ gap: 5px;
 
 
 /* 슬라이드 이미지 / 메인 로고 / 로그인 창 ================================================================================================================== */
+
 body .slide-section{
+    z-index: -1;
     width: 100%;
     height: 700px;
     max-height: 700px;
-    /* background: url("../images/beta.jpg") no-repeat fixed; */
-    /* background-size: ; */
-    background-color: rgb(0, 0, 0);
+    background: url("../images/bg-beta.png") no-repeat fixed;
+    background-size: cover ;
 }
 .slide-section .wrap{
     width: 100%;
@@ -356,8 +372,8 @@ body .slide-section{
     height: 100%;
     margin: 0 auto;
     padding: 30px 0;
-    background: url("../images/banner1beta.png") no-repeat ;
-    background-size: cover;
+    /* background: url("../images/banner1beta.png") no-repeat ;
+    background-size: cover; */
     display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -367,6 +383,7 @@ body .slide-section{
 }
 /* 메인로고 */
 .slide-section >.wrap > a img{
+    
     width: 100%;
     max-width: 350px;
     min-width:  100px;
@@ -385,16 +402,20 @@ body .slide-section{
     text-align: center;
 }
 .introduce-wrap{
+    padding-top: 250px ;
     width: 100%;
     max-width: 1000px;
-    margin: 190px auto 0;
+    margin: 0 auto ;
     height: 500px;
-    background-color: #585bff;
+    /* background-color: #585bff; */
 }
 /* .introduce-wrap:hover{
     display: block;
 } */
-
+.introduce-wrap img{
+    width: 100%;
+    max-width: 900px;
+}
 .introduce-wrap h1{
     margin: 14px 0;
     font-size: 20px;
@@ -405,3 +426,4 @@ body .slide-section{
     font-weight: 500;
 }
 /* 상품광고란 ===========================================================================================================================================*/
+

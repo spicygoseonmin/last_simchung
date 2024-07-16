@@ -46,600 +46,639 @@
 
     <div class="wrap">
       <!-- 헤더 -->
-      <header class="header">
-        <div class="header-wrap">
-          <!-- 아이콘 -->
-          <ul class="headerIcon-section">
-            <li>
-              <a href="#"><i class="fa-solid fa-headphones"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-regular fa-calendar-days"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-gift"></i></a>
-            </li>
-            <!-- <li class="megaphone">
-              <marquee direction= left scrollamount=5>공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용</marquee>
-            </li> -->
-          </ul>
-          <!-- 고객센터 -->
-          <!-- 선물함 -->
-          <!-- 캘린더 -->
-          <ul class="headerLogin-section">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-            <li>
-              <a href="#"><i class="fa-solid fa-bell"></i></a>
-            </li>
-          </ul>
-          <!-- 메뉴 바로가기 & 로그인 바로가기-->
-        </div>
-      </header>
-
-      <!-- 헤더 메뉴 -->
-      <div class="header-menu">
-        <nav class="header-menu-wrap">
-          <!-- 좌측 메뉴 -->
-          <ul class="leftMenu">
-            <!-- 메인메뉴 -->
-            <li>
-              <a href="#">생물</a>
-              <div class="submenu pSub">
-                <ul class="petList">
-                  <li><a href="#">해수어</a></li>
-                  <li><a href="#">담수어</a></li>
-                  <li>
-                    <a href="#">양서류<small> • </small>파충류</a>
-                  </li>
-                  <li><a href="#">기타 생물</a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">쇼핑</a>
-            </li>
-            <li>
-              <a href="#">시세</a>
-            </li>
-            <li>
-              <a href="#">스토리</a>
-            </li>
-            <li>
-              <a href="#">그룹</a>
-            </li>
-            <li>
-              <a href="#">뉴스</a>
-            </li>
-            <li>
-              <a href="#">MY</a>
-            </li>
-          </ul>
-          <!-- 우측 메뉴 -->
-          <div class="rightMenu">
-            <div class="search-icon">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="addMenubar">
-              <a href="#">
-                <i class="fa-solid fa-bars"></i>
-              </a>
-              <div class="submenu">
-                <ul class="profile-wrap">
-                  <a href="#" class="profile">
-                    <div class="profile-img"></div>
-                  </a>
-                  <li><a href="#">내 프로필</a></li>
-                  <li><a href="#">보관함</a></li>
-                  <li><a href="#">채팅 | 문의</a></li>
-                  <li><a href="#">구매 내역</a></li>
-                  <li><a href="#">환경 설정</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <!-- 검색창 검색아이콘 클릭시 헤더 메뉴창 아래에 스크롤되면서 나타남 -->
-      <section id="searchWindow">
-        <div class="search-wrap-hover">
-          <form action="#">
-            <input type="text" class="search-form" maxlength="30" placeholder="무엇이 궁금하신가요?" />
-            <input type="reset" class="search-reset" />
-            <input type="button" class="search-input-click" />
-          </form>
-        </div>
-      </section>
-
-      <!-- 스와이프 이미지 & 로고 & 로그인 창 -->
-      <div class="slide-section">
-        <div class="wrap">
-          <a href="#">
-            <img src="images/simchung-mainlogo.png" alt="심청 메인 로고" />
-          </a>
-          <!-- 로그인 창 -->
-        </div>
-      </div>
-
-      <!-- 심청 소개란 -->
-      <section class="introduce">
-        <div class="introduce-wrap">
-          <h3>-어서오세요, 뵙게 되어 영광입니다.-</h3>
-          <h1>심청</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis quae harum tenetur, iusto eveniet reiciendis eius et atque a, soluta eligendi ratione. Illum deleniti, odit expedita qui provident iusto.</p>
-        </div>
-      </section>
-
-      <!-- 상단 상품 소개란 -->
-      <section class="sale-object">
-        <div class="sale-object-wrap">
-          <h1>오늘의 추천 생물</h1>
-          <div class="popular_list_wrap inner">
-            <a href="#">BEST</a>
-
-            <div class="swiper-button-next pop-bt"></div>
-            <div class="swiper-button-prev pop-bt"></div>
-            <div class="swiper popular_list">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="pet-img-wrap">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-
-                    <div class="pet-text">
-                      <div class="petList_information">
-                        <h2>아홀로톨 Axolot</h2>
-                        <p>V.white</p>
-                      </div>
-
-                      <div class="price_information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="pet-img-wrap">
-                      <img src="images/sale_pet_list/nordan_glass_frog.jfif" alt=" 노던 글라스 프록" />
-                    </div>
-
-                    <div class="pet-text">
-                      <div class="petList_information">
-                        <h2>노던 글라스 프록</h2>
-                        <p>Northern glass frog</p>
-                      </div>
-
-                      <div class="price_information">
-                        <h2>회사이름</h2>
-                        <h1>170,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="pet-img-wrap">
-                      <img src="images/sale_pet_list/cherry shrimp.jpg" alt="체리새우" />
-                    </div>
-
-                    <div class="pet-text">
-                      <div class="petList_information">
-                        <h2>체리새우</h2>
-                        <p>cherry shrimp(clear-shrimp)fesfdsfeds</p>
-                      </div>
-
-                      <div class="price_information">
-                        <h2>회사이름</h2>
-                        <h1>99,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="pet-img-wrap">
-                      <img src="images/sale_pet_list/red_albino_guppy.jpg" alt="인기 생물 리스트" />
-                    </div>
-
-                    <div class="pet-text">
-                      <div class="petList_information">
-                        <h2>레드 알비노 구피</h2>
-                        <p>red-albino guppy</p>
-                      </div>
-
-                      <div class="price_information">
-                        <h2>회사이름</h2>
-                        <h1>4,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="pet-img-wrap">
-                      <img src="images/sale_pet_list/oranda.jpg" alt="아홀로톨" />
-                    </div>
-
-                    <div class="pet-text">
-                      <div class="petList_information">
-                        <h2>오란다 금붕어</h2>
-                        <p>Oranda goldfish(mix)</p>
-                      </div>
-
-                      <div class="price_information">
-                        <h2>회사이름</h2>
-                        <h1>60,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 소통공간 및 공지사항 -->
-      <section class="notice inner">
-        <div class="notice-wrap">
-          <ul class="simchung-writers-section n-padding">
-            <h1 class="font-size-up">소식</h1>
-            <li>
-              <a href="#">주간 인기 소식</a>
-              <div class="popular_writer">
-                <ul>
-                  <li><a href="#"> </a></li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a href="#">인기 작가</a>
-              <div class="popular_stories"></div>
-            </li>
-          </ul>
-          <div class="popular_notice n-padding">
-            <a href="#" class="font-size-up">공지사항</a>
-            <ul>
+     <div class="fixer">
+        <header class="header">
+          <div class="header-wrap">
+            <!-- 아이콘 -->
+            <ul class="headerIcon-section">
               <li>
-                <a href="#">
-                  <p>(심청 기획)-생이 새우 샘플 나눔</p>
-                  <span>~2024 . 8 . 5 (금)</span>
-                </a>
+                <a href="#"><i class="fa-solid fa-headphones"></i></a>
               </li>
               <li>
-                <a href="#">
-                  <p>제12회 스테이 세미나 개최 안내</p>
-                  <span>~2024 . 8 . 5 (금)</span>
-                </a>
+                <a href="#"><i class="fa-regular fa-calendar-days"></i></a>
               </li>
               <li>
-                <a href="#">
-                  <p>Nano KAC 대회</p>
-                  <span>~2024 . 7 .31 (금)</span>
-                </a>
+                <a href="#"><i class="fa-solid fa-gift"></i></a>
               </li>
+              <!-- <li class="megaphone">
+                <marquee direction= left scrollamount=5>공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용</marquee>
+              </li> -->
+            </ul>
+            <!-- 고객센터 -->
+            <!-- 선물함 -->
+            <!-- 캘린더 -->
+            <ul class="headerLogin-section">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
               <li>
-                <a href="#">
-                  <p>말레아시아 구피 컨테스트(국제)</p>
-                  <span>~2024 . 7 . 15 (금)</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>제2회 망한 어항 레이아웃 대회(국제)</p>
-                  <span>~2024 . 7 . 12 (금)</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>아쿠아스케이퍼(국제)</p>
-                  <span>~2024 . 7 .10 (금)</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p>제12회 스테이 세미나 개최 안내</p>
-                  <span>~2024 . 7 . 3 (금)</span>
-                </a>
+                <a href="#"><i class="fa-solid fa-bell"></i></a>
               </li>
             </ul>
-            <p>정보에 문제 또는 오류가 있을경우 <a href="#">고객 센터</a>로 제보해주시면 감사하겠습니다.</p>
+            <!-- 메뉴 바로가기 & 로그인 바로가기-->
           </div>
-        </div>
-      </section>
-
-      <!-- 하단 상품 광고란 -->
-      <section class="undersaleBar inner">
-        <div class>
-          <div class="undersaleBar_1">
-            <div class="title"><a href="#">수량한정</a></div>
-            <div class="swiper sale_card">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
+        </header>
   
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
-                      </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
+        <!-- 헤더 메뉴 -->
+        <div class="header-menu">
+          <nav class="header-menu-wrap">
+            <!-- 좌측 메뉴 -->
+            <ul class="leftMenu">
+              <!-- 메인메뉴 -->
+              <li>
+                <a href="#">생물</a>
+                <div class="submenu pSub">
+                  <ul class="petList">
+                    <li><a href="#">해수어</a></li>
+                    <li><a href="#">담수어</a></li>
+                    <li>
+                      <a href="#">양서류<small> • </small>파충류</a>
+                    </li>
+                    <li><a href="#">기타 생물</a></li>
+                  </ul>
                 </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-  
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
-                      </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-  
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
-                      </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-  
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
-                      </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-  
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
-                      </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-  
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
-                      </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
+              </li>
+              <li>
+                <a href="#">쇼핑</a>
+              </li>
+              <li>
+                <a href="#">시세</a>
+              </li>
+              <li>
+                <a href="#">스토리</a>
+              </li>
+              <li>
+                <a href="#">그룹</a>
+              </li>
+              <li>
+                <a href="#">뉴스</a>
+              </li>
+              <li>
+                <a href="#">MY</a>
+              </li>
+            </ul>
+            <!-- 우측 메뉴 -->
+            <div class="rightMenu">
+              <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="addMenubar">
+                <a href="#">
+                  <i class="fa-solid fa-bars"></i>
+                </a>
+                <div class="submenu">
+                  <ul class="profile-wrap">
+                    <a href="#" class="profile">
+                      <div class="profile-img"></div>
+                    </a>
+                    <li><a href="#">내 프로필</a></li>
+                    <li><a href="#">보관함</a></li>
+                    <li><a href="#">채팅 | 문의</a></li>
+                    <li><a href="#">구매 내역</a></li>
+                    <li><a href="#">환경 설정</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
+          </nav>
+        </div>
+  
+        <!-- 검색창 검색아이콘 클릭시 헤더 메뉴창 아래에 스크롤되면서 나타남 -->
+        <section id="searchWindow">
+          <div class="search-wrap-hover">
+            <form action="#">
+              <input type="text" class="search-form" maxlength="30" placeholder="무엇이 궁금하신가요?" />
+              <input type="reset" class="search-reset" />
+              <input type="button" class="search-input-click" />
+            </form>
           </div>
+        </section>
+  
+        <!-- 스와이프 이미지 & 로고 & 로그인 창 -->
+        <div class="slide-section">
+          <div class="wrap">
+            <a href="#">
+              <img src="images/simchung-mainlogo.png" alt="심청 메인 로고" />
+            </a>
+            <!-- 로그인 창 -->
+          </div>
+        </div>
+     </div>
 
-          <hr />
-          
-          <div class="undersaleBar_1">
-            <div class="title"><a href="#">중고물품</a></div>
-            <div class="swiper mySwiper sale_card">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
+     <div class="mover">
+        <!-- 심청 소개란 -->
+        <section class="introduce">
+          <div class="introduce-wrap">
+            <!-- <img src="images/welcome-title.png" alt="인사말"> -->
+            <img src="images/we.png" alt="인사말">
+            <!-- <h3>-어서오세요, 뵙게 되어 영광입니다.-</h3> -->
+            <h1>심청</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis quae harum tenetur, iusto eveniet reiciendis eius et atque a, soluta eligendi ratione. Illum deleniti, odit expedita qui provident iusto.</p>
+          </div>
+        </section>
   
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
+        <!-- 상단 상품 소개란 -->
+        <section class="sale-object">
+          <div class="sale-object-wrap">
+            <h1>오늘의 추천 생물</h1>
+            <div class="popular_list_wrap inner">
+              <a href="#">BEST</a>
+  
+              <div class="swiper-button-next pop-bt"></div>
+              <div class="swiper-button-prev pop-bt"></div>
+              <div class="swiper popular_list">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="pet-img-wrap">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
                       </div>
   
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
+                      <div class="pet-text">
+                        <div class="petList_information">
+                          <h2>아홀로톨 Axolot</h2>
+                          <p>V.white</p>
+                        </div>
   
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
+                        <div class="price_information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
                       </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-  
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="pet-img-wrap">
+                        <img src="images/sale_pet_list/nordan_glass_frog.jfif" alt=" 노던 글라스 프록" />
                       </div>
   
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
+                      <div class="pet-text">
+                        <div class="petList_information">
+                          <h2>노던 글라스 프록</h2>
+                          <p>Northern glass frog</p>
+                        </div>
   
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
+                        <div class="price_information">
+                          <h2>회사이름</h2>
+                          <h1>170,000</h1>
+                        </div>
                       </div>
-  
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
-  
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="pet-img-wrap">
+                        <img src="images/sale_pet_list/cherry shrimp.jpg" alt="체리새우" />
                       </div>
   
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="#">
-                    <div class="undersaleBar_1-img">
-                      <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
-                    </div>
+                      <div class="pet-text">
+                        <div class="petList_information">
+                          <h2>체리새우</h2>
+                          <p>cherry shrimp(clear-shrimp)fesfdsfeds</p>
+                        </div>
   
-                    <div class="undersale-text">
-                      <div class="undersale_information">
-                        <h2>유목</h2>
-                        <p>20cm 이상 (40큐브 이상 추천)</p>
+                        <div class="price_information">
+                          <h2>회사이름</h2>
+                          <h1>99,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="pet-img-wrap">
+                        <img src="images/sale_pet_list/red_albino_guppy.jpg" alt="인기 생물 리스트" />
                       </div>
   
-                      <div class="undersale_price-information">
-                        <h2>회사이름</h2>
-                        <h1>58,000</h1>
+                      <div class="pet-text">
+                        <div class="petList_information">
+                          <h2>레드 알비노 구피</h2>
+                          <p>red-albino guppy</p>
+                        </div>
+  
+                        <div class="price_information">
+                          <h2>회사이름</h2>
+                          <h1>4,000</h1>
+                        </div>
                       </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="pet-img-wrap">
+                        <img src="images/sale_pet_list/oranda.jpg" alt="아홀로톨" />
+                      </div>
+  
+                      <div class="pet-text">
+                        <div class="petList_information">
+                          <h2>오란다 금붕어</h2>
+                          <p>Oranda goldfish(mix)</p>
+                        </div>
+  
+                        <div class="price_information">
+                          <h2>회사이름</h2>
+                          <h1>60,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="bannerAd">
-        <div class="bannerAd-input"></div>
-      </section>
-
-      <section class="etx inner">
-        <div class="company">
-          <ul class="company-information">
-            <li class="company-info-list">
-              <a href="#">본사</a>
+        </section>
+  
+        <!-- 소통공간 및 공지사항 -->
+        <section class="notice inner">
+          <div class="notice-wrap">
+            <ul class="simchung-writers-section n-padding">
+              <h1 class="font-size-up">소식</h1>
+              <li>
+                <a href="#">주간 인기 소식</a>
+                <div class="popular_writer">
+                  <ul>
+                    <li><a href="#"> </a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">인기 작가</a>
+                <div class="popular_stories"></div>
+              </li>
+            </ul>
+            <div class="popular_notice n-padding">
+              <a href="#" class="font-size-up">공지사항</a>
               <ul>
-                <li><a href="#">찾아오는 길</a></li>
-                <li><a href="#">문의</a></li>
-                <li><a href="#">컨택</a></li>
-                <li><a href="#">입사 정보</a></li>
+                <li>
+                  <a href="#">
+                    <p>(심청 기획)-생이 새우 샘플 나눔</p>
+                    <span>~2024 . 8 . 5 (금)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>제12회 스테이 세미나 개최 안내</p>
+                    <span>~2024 . 8 . 5 (금)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>Nano KAC 대회</p>
+                    <span>~2024 . 7 .31 (금)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>말레아시아 구피 컨테스트(국제)</p>
+                    <span>~2024 . 7 . 15 (금)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>제2회 망한 어항 레이아웃 대회(국제)</p>
+                    <span>~2024 . 7 . 12 (금)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>아쿠아스케이퍼(국제)</p>
+                    <span>~2024 . 7 .10 (금)</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p>제12회 스테이 세미나 개최 안내</p>
+                    <span>~2024 . 7 . 3 (금)</span>
+                  </a>
+                </li>
               </ul>
-            </li>
-            <li class="gallery">
-              <a href="#">갤러리</a>
-              <ul>
-                <li><a href="#"><img src="" alt=""></a></li>
-                <li><a href="#"><img src="" alt=""></a></li>
-                <li><a href="#"><img src="" alt=""></a></li>
-                <li><a href="#"><img src="" alt=""></a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+              <p>정보에 문제 또는 오류가 있을경우 <a href="#">고객 센터</a>로 제보해주시면 감사하겠습니다.</p>
+            </div>
+          </div>
+        </section>
+  
+        <!-- 하단 상품 광고란 -->
+        <section class="undersaleBar inner">
+          <div class>
+            <div class="undersaleBar_1">
+              <div class="title"><a href="#">수량한정</a></div>
+              <div class="swiper sale_card">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+  
+            <hr />
+  
+            <div class="undersaleBar_1">
+              <div class="title"><a href="#">중고물품</a></div>
+              <div class="swiper mySwiper sale_card">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="undersaleBar_1-img">
+                        <img src="images/sale_pet_list/axolotl.jfif" alt="아홀로톨" />
+                      </div>
+    
+                      <div class="undersale-text">
+                        <div class="undersale_information">
+                          <h2>유목</h2>
+                          <p>20cm 이상 (40큐브 이상 추천)</p>
+                        </div>
+    
+                        <div class="undersale_price-information">
+                          <h2>회사이름</h2>
+                          <h1>58,000</h1>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <section class="bannerAd">
+          <div class="bannerAd-input"></div>
+        </section>
+  
+        <section class="etx inner">
+          <div class="company">
+            <ul class="company-information">
+              <li class="company-info-list">
+                <a href="#">본사</a>
+                <ul>
+                  <li><a href="#">찾아오는 길</a></li>
+                  <li><a href="#">문의</a></li>
+                  <li><a href="#">컨택</a></li>
+                  <li><a href="#">입사 정보</a></li>
+                </ul>
+              </li>
+              <li class="gallery">
+                <a href="#">갤러리</a>
+                <ul>
+                  <li><a href="#"><img src="" alt=""></a></li>
+                  <li><a href="#"><img src="" alt=""></a></li>
+                  <li><a href="#"><img src="" alt=""></a></li>
+                  <li><a href="#"><img src="" alt=""></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="map">
+            <a href="#">지도</a>
+  
+          </div>
+        </section>
+  
+        <footer class="footer">
+          <div class="footer-wrap">
+            <div class="footer-left">
+              <div class="footer-leftUp">
+                <ul>
+                  <li><a href="#">이용약관</a></li>
+                  <li><a href="#">이용안내</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">회사 소개</a></li>
+                </ul>
+              </div>
+              <div class="footer-leftDown">
+                <h1>심청 기본 정보</h1>
+                <ul>
+                  <li><b>대표</b>| 김00</li>
+                  <li><b>상호명</b>| Mind Blue </li>
+                  <li><b>개인정보보호책임자</b>| 폰은정</li>
+                  <li><b>사업자 등록번호</b>| 123-456-1 </li>
+                  <li><b>사업장 주소</b>| 부산광역시 00구 00길 12-3 6층</li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-right">
+              <h1>고객 센터</h1>
+              <div class="footer-rightUp">
+                <ul>상담 전화 | 051-000-0000
+                  <li>상담 가능시간 (주말 공휴일 제외 | 오전 9:00시 ~ 오후 7:00시)</li>
+                </ul>
+                <p>상담 이메일 | bluemind@email.com</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+     </div>
 
-        <div class="map">
-          <a href="#">지도</a>
-
-        </div>
-      </section>
-
-      <footer class="footer"></footer>
     </div>
 
     <!-- 푸터 -->
