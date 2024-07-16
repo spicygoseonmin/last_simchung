@@ -33,29 +33,51 @@ window.onload = function () {
     }
 
     const swPop = new Swiper(".popular_list", {
-        slidesPerView: 5,
-        grid: {
-            rows: 1,
-            fill: "row",
-            },
+        slidesPerView: 2,
+        // grid: {
+        //     rows: 1,
+        //     fill: "row",
+        //     },
         spaceBetween: 0,
         breakpoints: {
             480: {
             slidesPerView: 2,
             },
             760: {
-            slidesPerView: 2,
+            slidesPerView: 5,
             },
         },
         loop: true,
         autoplay: {
-            delay: 2500,
+            delay: 3500,
             disableOnInteraction: false,
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".sale-object.swiper-button-next",
+            prevEl: ".sale-object.swiper-button-prev",
         },
-      });
+    });
+
+    const swUnder = new Swiper(".sale_card",{
+        slidesPerView: 2,
+        // grid: {
+        //     rows: 1,
+        //     fill: "row",
+        //     },
+        spaceBetween: 0,
+        breakpoints: {
+            480: {
+            slidesPerView: 2,
+            },
+            760: {
+            slidesPerView: 4,
+            },
+        },
+        loop: true,
+        autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+        },
+    })
 };
 

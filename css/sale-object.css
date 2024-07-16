@@ -1,34 +1,18 @@
 @charset "utd-8";
 
 /* 상품 광고란 */
-.swiper {
-    width: 100%;
-    height: 100%;
-}
 
-.swiper-wrapper {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .swiper-slide{
     width: 100%;
+    /* width: 100%;
     max-width: 200px;
-    min-width: 200px;
-}
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    min-width: 200px; */
 }
 
 .sale-object{
     width: 100%;
-    max-width: 1380px;
+    max-width: 1270px;
     height: 100%;
     margin: 0 auto;
     background-color: #888;
@@ -38,19 +22,24 @@
     font-size: 26px;
     font-weight: 600;
 }
+.swiper-slide > a{
+    /* display: block;
+ 
+    height: 290px;
+    padding: 10px; */
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: block;
+}
 
 /* 인기 생물 */
 .popular_list_wrap{
     background-color: rgb(255, 255, 255);
 }
-.swiper-slide{
-    height: 290px;
-    padding: 10px;
-    border-right: 1px solid rgba(0, 0, 0, 0.2);
-}
 .pet-img-wrap{
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
     display: flex;
         justify-content: center;
         align-content: center;
@@ -63,6 +52,7 @@
 .pet-text{
     width: 180px;
     height: 90px;
+    margin: 0 auto;
     display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -106,4 +96,13 @@
     border-radius: 10px;
     background-color: #585bff;
     color: white;
+}
+
+/* 버튼 색깔 */
+.pop-bt{
+    width: 40px;
+    height: 40px;
+    color: black;
+    border:  1px solid #333;
+    border-radius: 50%;
 }

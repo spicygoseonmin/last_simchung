@@ -1,0 +1,21 @@
+@charset "utd-8";
+
+.etx{
+    width: 100%;
+    max-width: 1380px;
+    height: 350px;
+    margin: 180px auto;
+    background-color: aquamarine;
+    display: flex;
+}
+
+.company{
+    width: 50%;
+    background-color: bisque;
+}
+
+.map{
+    width: 50%;
+    background-color: yellowgreen;
+}
+

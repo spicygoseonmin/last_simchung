@@ -1,0 +1,16 @@
+@charset "utd-8";
+
+.bannerAd{
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    height: 250px;
+    background-color: aqua;
+}
+.bannerAd-input{
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    height: 250px;
+    background-color: aqua;
+}
