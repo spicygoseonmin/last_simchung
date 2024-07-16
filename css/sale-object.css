@@ -1,0 +1,109 @@
+@charset "utd-8";
+
+/* 상품 광고란 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide{
+    width: 100%;
+    max-width: 200px;
+    min-width: 200px;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale-object{
+    width: 100%;
+    max-width: 1380px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #888;
+    text-align: center;
+}
+.sale-object-wrap h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* 인기 생물 */
+.popular_list_wrap{
+    background-color: rgb(255, 255, 255);
+}
+.swiper-slide{
+    height: 290px;
+    padding: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.pet-img-wrap{
+    width: 180px;
+    height: 180px;
+    display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+    overflow: hidden;
+}
+.pet-img-wrap img{
+    height: 100%;
+}
+.pet-text{
+    width: 180px;
+    height: 90px;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+/* 생물 정보 */
+.petList_information{
+    width: 100%;
+    gap: 5px;
+    display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+}
+.petList_information h2{
+    font-weight: 700;
+    margin-top: 5px;
+}
+.petList_information p{
+    width: 90%;
+    height: 20px;
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    white-space: nowrap;
+    color: rgb(114, 114, 114);
+}
+
+/* 가격정보 */
+.price_information{
+    width: 100%;
+    display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+}
+.price_information h2{
+    font-size: 13px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background-color: #585bff;
+    color: white;
+}

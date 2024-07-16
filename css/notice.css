@@ -1,0 +1,62 @@
+@charset "utd-8";
+.notice{
+    box-shadow: inset 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+    background: url("../images/fixed.jpg")fixed 10%;
+    background-size:cover;
+}
+.notice-wrap{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    max-width: 1380px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+.simchung-writers-section{
+    width: 50%;
+    background-color: aquamarine;
+}
+.font-size-up{
+    font-size: 25px;
+    font-weight: 600;
+}
+.n-padding{
+    padding: 20px;
+}
+.n-padding > p{
+    font-size:13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.popular_notice{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.116);
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+}
+.popular_notice > ul > li{
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14) ;
+}
+.popular_notice > ul > li> a{
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+}
+.popular_notice ul > li > a > p{
+    width: 100%;
+    height: 16px;
+    max-width: 230px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.popular_notice ul > li > a > span{
+    font-size: 13px;
+}

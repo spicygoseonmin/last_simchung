@@ -1,0 +1,75 @@
+@charset "utd-8";
+.undersaleBar{
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+.undersaleBar_1{
+    width: 100%;
+    padding: 60px;
+}
+.sale_card{
+    width: 100%;
+    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+}
+.sale_card > li{
+    width: 180px;
+    height: 270px;
+    border-radius: 10px 10px 0 0;
+overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.undersaleBar_1-img{
+    width: 180px;
+    height: 180px;
+    display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+overflow: hidden;
+}
+
+/* 하단 상품창택스트 구역 */
+.undersale-text{
+    height: 90px;
+    padding: 5px;
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between
+}
+.undersaleBar_1-img img{
+    height: 100%;
+}
+.undersale_information h2{
+    font-size: 17px;
+    font-weight: 700;
+}
+.undersale_information p{
+    width: 170px;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.undersale_price-information h2{
+    font-size: 14px;
+}
+.undersale_price-information{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+}
+.undersale_price-information h1{
+    font-size: 20px;
+    font-weight: 700;
+}

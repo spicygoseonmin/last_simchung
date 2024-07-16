@@ -1,6 +1,11 @@
 @charset "utd-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+@import url("sale-object.css");
+@import url("notice.css");
+@import url("undersaleBar.css");
+@import url("uiux.css");
+
 
 *{
     margin: 0;
@@ -9,6 +14,19 @@
     list-style: none;
     text-decoration: none;
 }
+
+html,
+body {
+position: relative;
+height: 100%;
+}
+
+body {
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
 
 a{
     color: black;
@@ -21,7 +39,9 @@ a{
     position: relative;
 }
 
-
+.inner{
+    padding: 20px;
+}
 
 
 
@@ -31,15 +51,16 @@ a{
     width: 100%;
     height: 40px;
     background-color: rgb(0, 0, 0);
+    display: flex;
 }
-.header .wrap{
+.header-wrap{
     width: 100%;
         max-width: 1380px;
     margin: 0 auto;
     display: flex;
         justify-content: space-between;
 }
-.header > .wrap ul li a{
+.header-wrap ul li a{
     color: white;
 }
 
@@ -101,7 +122,7 @@ a{
     z-index: 2;
     box-shadow: 0 1px 2px 2px rgba(0, 0, 0, 0.15);
 }
-.header-menu >.wrap{
+.header-menu-wrap{
     width: 100%;
     max-width: 1390px;
     height: 100%;
@@ -140,6 +161,9 @@ gap: 11px;
 .rightMenu i {
     font-size: 25px;
 }
+.rightMenu i:hover{
+    color: #585bff;
+}
 .rightMenu{
     height: 25px ;
     display: flex;
@@ -149,7 +173,7 @@ gap: 11px;
 }
 .rightMenu > div{
     width: 30px;
-gap: 11px;
+gap: 10px;
     display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -159,11 +183,13 @@ gap: 11px;
 
 /* 서브메뉴 리스트 */
 /* 1) 생물 */
-.header-menu .wrap > ul > li> a:hover{
+.header-menu-wrap > ul > li> a:hover{
     color: #888;
 }
 .submenu{
     display: none;
+}
+.pSub{
     width: 400px;
 }
 
@@ -191,8 +217,23 @@ gap: 11px;
 
 
 /* 더보기(바로가기) 메뉴 */
-.addMenubar ul{
+.addMenubar .wrap{
     display: none;
+}
+.addMenubar ul{
+    width: 90px;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    box-shadow: inset 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+gap: 5px;
+}
+.addMenubar ul > li a{
+    font-size: 14px;
 }
 
 /* 검색창 */
@@ -200,7 +241,6 @@ gap: 11px;
     display: none;
 }
 .search-wrap-hover{
-
     margin: auto;
     width: 100%;
     height: 150px;
@@ -216,6 +256,9 @@ gap: 11px;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.7);
 }
+.search-wrap-hover form{
+    position: relative;
+}
 .search-form{
     width: 450px;
     height: 44px;
@@ -226,6 +269,16 @@ gap: 11px;
     border: 1px solid #00000030;
     border-radius: 50px;
     background-color: rgb(255, 255, 255);
+}
+.search-form:hover{
+    /* outline: 1px solid rgb(0, 0, 0); */
+    border: 1px solid black;
+    transition-property: border;
+    transition-duration: 1s;
+}
+.search-form:focus {
+    border: none;
+    outline: 1px solid rgb(0, 0, 0) ;
 }
 /* .clicked{
     border: 1px solid #000000;
@@ -249,6 +302,10 @@ gap: 11px;
     border: none;
     background: url("../images/search_reset_button.svg") no-repeat center;
     background-size:cover; 
+    position: absolute;
+    top: 50%;
+    right: 55px;
+    transform: translateY(-50%);
 }
 .search-input-click{
     width: 22px;
@@ -257,7 +314,12 @@ gap: 11px;
     background: url("../images/search_input.svg") no-repeat center;
     background-size: cover;
     cursor: pointer;
+    position: absolute;
+        top: 50%;
+        right: 20px;
+    transform: translateY(-50%);
 }
+
 #searchWindow.openSearchWindow{
     display: block;
 }
@@ -292,7 +354,7 @@ body .slide-section{
         align-items: flex-end;
 }
 /* 메인로고 */
-.slide-section .wrap a img{
+.slide-section >.wrap > a img{
     width: 100%;
     max-width: 350px;
     min-width:  100px;
@@ -303,5 +365,20 @@ body .slide-section{
 
 /* 메인섹션============================================================================================================================================== */
 .introduce{
-
+    width: 100%;
+    max-width: 1380px;
+    height: 460px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
 }
+
+.introduce-wrap h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+.introduce-wrap h3{
+    font-size: 30px;
+    font-weight: 500;
+}
+/* 상품광고란 ===========================================================================================================================================*/
