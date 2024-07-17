@@ -44,6 +44,7 @@ window.onload = function () {
             slidesPerView: 2,
             },
             760: {
+            slidesPerGroup:5,
             slidesPerView: 5,
             },
         },
@@ -71,6 +72,7 @@ window.onload = function () {
             },
             760: {
             slidesPerView: 4,
+            slidesPerGroup:2,
             },
         },
         loop: true,
@@ -79,5 +81,17 @@ window.onload = function () {
             disableOnInteraction: false,
         },
     })
+
+    
 };
+
+$(document).ready(function(){
+    $(function(){
+        $(".etx-tabmenu > li > p").click(function(){
+            // console.log(this);
+            // console.log는 변수가 작용하고 있는지 F12번에 내역을 남겨줌 
+            $(this).parent().addClass("active").siblings().removeClass("active");
+        });
+    });
+});
 

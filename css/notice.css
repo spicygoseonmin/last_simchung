@@ -15,6 +15,7 @@
     box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.3);
 }
 .simchung-writers-section{
+    height: 100%;
     width: 50%;
     background-color: aquamarine;
 }
@@ -59,4 +60,19 @@
 }
 .popular_notice ul > li > a > span{
     font-size: 13px;
+}
+
+/* 인기 작가 구간 */
+.popular_stories > ul > li{
+    display: block;
+    width: 50%;
+    height: 145px;
+    background-color: aliceblue;
+}
+.pop-Writer-img{
+    width: 100%;
+    min-width: 150px;
+    height: 100%;
+    max-height: 150px;
+    background-color: aqua;
 }
