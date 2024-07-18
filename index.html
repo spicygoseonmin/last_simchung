@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <link rel="stylesheet" href="css/uiux.css">
     <link rel="stylesheet" href="css/main.css" />
     
     <!-- 자바스크립트 링크 -->
@@ -77,7 +78,36 @@
             <!-- 메뉴 바로가기 & 로그인 바로가기-->
           </div>
         </header>
-  
+
+        <header class="mb-header">
+          <div class="addMenubar">
+            <a href="#">
+              <i class="fa-solid fa-bars mb-Icon"></i>
+            </a>
+            <div class="submenu mb-submenu">
+              <ul class="profile-wrap">
+                <div class="mb-header-Icon">
+                  <h2>메뉴</h2>
+                  <a href="#" class="profile">
+                    <div class="profile-img"></div>
+                  </a>
+                  <img src="images/remove.svg" alt="돌아가기" class="return-Icon">
+                </div>
+                <li><a href="#">생물</a></li>
+                <li><a href="#">쇼핑</a></li>
+                <li><a href="#">시세</a></li>
+                <li><a href="#">스토리 </a></li>
+                <li><a href="#">그룹</a></li>
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">MY</a></li>
+                <li>
+                  <a href="#">고객센터</a>
+                  <a href="#">문의하기</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
         <!-- 헤더 메뉴 -->
         <div class="header-menu">
           <nav class="header-menu-wrap">
@@ -175,14 +205,18 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur officiis quae harum tenetur, iusto eveniet reiciendis eius et atque a, soluta eligendi ratione. Illum deleniti, odit expedita qui provident iusto.</p>
           </div>
         </section>
-  
+
+
+        <section class="adUp-banner">
+          <div class="kakao"></div>
+          <div class="coupon"></div>
+        </section>
         <!-- 상단 상품 소개란 -->
         <section class="sale-object">
           <div class="sale-object-wrap">
             <h1>오늘의 추천 생물</h1>
             <div class="popular_list_wrap inner">
-              <a href="#">BEST</a>
-  
+              <a href="#"><h1>BEST</h1></a>
               <div class="swiper-button-next pop-bt"></div>
               <div class="swiper-button-prev pop-bt"></div>
               <div class="swiper popular_list">
@@ -595,7 +629,7 @@
               </div>
             </div>
   
-            <hr />
+            <hr/>
   
             <div class="undersaleBar_1">
               <div class="title"><a href="#">중고물품</a></div>

@@ -4,12 +4,11 @@
 
 @import url("notice.css");
 @import url("undersaleBar.css");
-@import url("uiux.css");
 @import url("sale-object.css");
 @import url("bannerad.css");
 @import url("etx.css");
 @import url("footer.css");
-
+/* @import url("uiux.css"); */
 
 *{
     margin: 0;
@@ -62,10 +61,93 @@ a{
     background-color: white;
     width: 100%;
     height: 100%;
-
 }
 
 /* 헤더 =======================================================================================================================================*/
+/* .hd-nonefixer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+} */
+ /* 모바일 헤더 */
+.mb-view{
+    display: none;
+}
+
+
+.mb-header{
+    display: none;
+    width: 100%;
+    height: 80px;
+    position: relative;
+}
+.mb-header > .addMenubar > a> i{
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    right: 20px ;
+    transform: translateY(-50%);
+}
+.mb-header > .addMenubar > .submenu{
+    width: 100%;
+    position: absolute;
+        top: 0;
+        left: 0;
+    background: white;
+}
+.mb-header > .addMenubar > .submenu > .profile-wrap{
+    width: 100%;
+}
+.mb-header .mb-header-Icon{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+}
+.mb-header .mb-header-Icon > h2{
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    font-size: 25px;
+    font-weight: 700;
+}
+.mb-header .mb-header-Icon >.return-Icon{
+    width: 40px;
+    position: absolute;
+    top: 30px;
+}
+.mb-header > .addMenubar > .submenu > .profile-wrap> li{
+    width: 100%;
+    border-bottom: 1px solid #00000020;
+    padding: 20px;
+    z-index: 99;
+}
+.mb-header > .addMenubar > .submenu > .profile-wrap> li:nth-of-type(7){
+    border: none;
+}
+.mb-header > .addMenubar > .submenu > .profile-wrap> li:last-of-type{
+    height: 100px;
+    border-top: 1px solid #000;
+    border-bottom: none;
+    display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+}
+.mb-header > .addMenubar > .submenu > .profile-wrap> li:last-of-type > a{
+    color: #00000070;
+    font-weight: 500;
+    text-align: center;
+    width: 50%;
+    height: 20px;
+}
+.mb-header > .addMenubar > .submenu > .profile-wrap> li:last-of-type > a:first-of-type{
+    border-right: 1px solid #00000060
+}
+
+
+
+
+ /* pc헤더 */
 .header{
     width: 100%;
     height: 40px;
@@ -362,7 +444,6 @@ body .slide-section{
     z-index: -1;
     width: 100%;
     height: 700px;
-    max-height: 700px;
     background: url("../images/bg-beta.png") no-repeat fixed;
     background-size: cover ;
 }
@@ -392,14 +473,13 @@ body .slide-section{
 
 
 
-/* 메인섹션============================================================================================================================================== */
+/* 심청 소개란============================================================================================================================================== */
 .introduce{
     width: 100%;
-    max-width: 1380px;
     height: 700px;
-    margin: 0 auto;
     background-color: #ffffff;
     text-align: center;
+    box-shadow:  0 4px 4px 2px rgba(0, 0, 0, 0.226);
 }
 .introduce-wrap{
     padding-top: 250px ;
@@ -407,14 +487,26 @@ body .slide-section{
     max-width: 1000px;
     margin: 0 auto ;
     height: 500px;
+    border-bottom: 1px solid;
+
+    /* 심청 소개란 움직임 */
+    opacity: 0;
+    transition: all 0.5s;
     /* background-color: #585bff; */
 }
+/* 심청 소개란 js *class */
+.view{
+    opacity: 1;
+}
+
+
 /* .introduce-wrap:hover{
     display: block;
 } */
-.introduce-wrap img{
+.introduce-wrap > img{
     width: 100%;
     max-width: 900px;
+    position: relative;
 }
 .introduce-wrap h1{
     margin: 14px 0;
@@ -425,5 +517,24 @@ body .slide-section{
     font-size: 30px;
     font-weight: 500;
 }
-/* 상품광고란 ===========================================================================================================================================*/
+/*  상단 광고 배너 ===========================================================================================================================================*/
+.adUp-banner{
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+gap: 10px;
+}
+.adUp-banner .kakao{
+    width: 50%;
+    height: 100px;
+    background: url("../images/kakaopay_og_20201217.jfif") no-repeat center;
+    background-size: cover;
+}
+.adUp-banner .coupon{
+    width: 50%;
+    height: 100px;
+    background-color: #58bcff;
+}
 

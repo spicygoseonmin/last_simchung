@@ -1,7 +1,25 @@
 @charset "utd-8";
+@media screen and (max-width:1400px){
+    .pop-bt{
+        position: absolute;
+        color: rgba(0, 0, 0, 0.219);
+        display: none
+    }
+}
+
 @media screen and (max-width:1024px) {
-    body .slide-section{
-        height: 400px
+    /* body.slide-section{
+        height: 400px;
+    } */
+    body .wrap .mover{
+        margin-top: 650px
+    }
+    .wrap .introduce{
+        height: 500px;
+    }
+    .introduce > .introduce-wrap{
+        height: 400px;
+        padding-top: 120px;
     }
     .header{
         padding: 0 10px;
@@ -15,4 +33,92 @@
     .slide-section .wrap{
         padding: 0 20px;
     }
-};
+
+    /* 하단 상품 바 */
+
+}
+
+@media screen and (max-width:768px){
+    .inner{
+        padding: 5px !important;
+     }
+    .undersaleBar_1{
+        height: 380px !important;
+        padding: 0 !important;
+    }
+    .undersaleBar_1-img{
+        width: 100% !important;
+        min-height: 180px !important;
+    }
+    .undersale-text{
+        width: 100%;
+    }
+    .undersale_information{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .mb-header{
+        display: block !important;
+    }
+    .header{
+        display: none !important;
+    }
+    .header-menu{
+        display: none;
+    }
+    /* .fixer{
+        position: relative !important;
+    } */
+    /* .mover{
+        margin-top: 0 !important;
+    } */
+
+    .popular_notice{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+
+     .inner{
+        padding: 5px !important;
+     }
+    .undersaleBar_1{
+        height: 380px !important;
+        padding: 0 !important;
+    }
+    .undersaleBar_1-img{
+        width: 100% !important;
+        min-height: 180px !important;
+    }
+    .undersale-text{
+        width: 100%;
+    }
+    .undersale_information{
+        width: 100%;
+    }
+
+
+    body .wrap .mover .adUp-banner {
+        width: 100%;
+        max-width: 1380px;
+        display: flex;
+        flex-direction: column;
+    }
+    .adUp-banner > .kakao {
+        width: 100% !important;
+        height: 100px;
+        background-color: #585bff;
+    }
+    .adUp-banner > .coupon {
+        width: 100% !important;
+        height: 100px;
+        background-color: #58bcff;
+    }
+    /* 버튼 색 */
+
+    .footer{
+        display: none;
+    }
+}

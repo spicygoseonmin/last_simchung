@@ -2,7 +2,6 @@
 
 /* 상품 광고란 */
 
-
 .swiper-slide{
     width: 100%;
     /* width: 100%;
@@ -13,18 +12,19 @@
 .sale-object{
     width: 100%;
     max-width: 1270px;
-    height: 500px;
+    height: 600px;
     margin: 0 auto;
+    padding: 100px 0;
     /* background-color: #888; */
     text-align: center;
 }
+
 .sale-object-wrap h1{
-    font-size: 26px;
+    font-size: 1.7rem;
     font-weight: 600;
 }
 .swiper-slide > a{
     /* display: block;
- 
     height: 290px;
     padding: 10px; */
     border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -35,6 +35,21 @@
 /* 인기 생물 */
 .popular_list_wrap{
     background-color: rgb(255, 255, 255);
+    position: relative;
+}
+.popular_list_wrap> a > h1{
+    width: 10vw;
+    min-width: 70px;
+    max-width: 90px;
+    height: 25px;
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 3px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: #FF5F5F;
+    color: white;
 }
 .pet-img-wrap{
     width: 220px;
@@ -45,6 +60,25 @@
         align-content: center;
         flex-wrap: wrap;
     overflow: hidden;
+    position: relative;
+    border: 1px solid #00000025;
+}
+.pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star2.svg") ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+}
+.pet-img-wrap:hover::after{
+    opacity: 1;
+    transition: all 0.4s;
 }
 .pet-img-wrap img{
     height: 100%;
@@ -74,7 +108,7 @@
 .petList_information p{
     width: 90%;
     height: 20px;
-    font-size: 14px;
+    font-size: 0.9rem;
     display: block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -100,9 +134,12 @@
 
 /* 버튼 색깔 */
 .pop-bt{
-    width: 40px;
-    height: 40px;
-    color: black;
-    border:  1px solid #333;
-    border-radius: 50%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.219);
+}
+.swiper-button-next{
+    right: -20px;
+}
+.swiper-button-prev{
+    left: -20px;
 }
