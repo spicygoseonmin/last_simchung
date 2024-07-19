@@ -527,9 +527,10 @@ body .slide-section{
 gap: 10px;
 }
 .adUp-banner .kakao{
+    border-radius: 5px;
     width: 50%;
-    height: 100px;
-    background: url("../images/kakaopay_og_20201217.jfif") no-repeat center;
+    height: 190px;
+    background: url("../images/ad-banner/kakao-banner.png") no-repeat center;
     background-size: cover;
 }
 .adUp-banner .coupon{

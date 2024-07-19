@@ -76,6 +76,28 @@
     color: white;
     opacity: 0;
 }
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(2) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star4.svg") ;
+}
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(3) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star1.svg") ;
+}
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(4) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star2.svg") ;
+}
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(5) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star3.svg") ;
+}
+
+
 .pet-img-wrap:hover::after{
     opacity: 1;
     transition: all 0.4s;
