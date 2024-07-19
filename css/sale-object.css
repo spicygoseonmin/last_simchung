@@ -96,6 +96,31 @@
     content: "난이도"
     url("../images/star/star3.svg") ;
 }
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(6) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star1.svg") ;
+}
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(7) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star5.svg") ;
+}
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(8) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star3.svg") ;
+}
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(9) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star2.svg") ;
+}
+.popular_list > .swiper-wrapper > .swiper-slide:nth-of-type(10) > a > .pet-img-wrap::after{
+    padding-top: 20px;
+    content: "난이도"
+    url("../images/star/star2.svg") ;
+}
 
 
 .pet-img-wrap:hover::after{

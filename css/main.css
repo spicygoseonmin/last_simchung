@@ -534,8 +534,10 @@ gap: 10px;
     background-size: cover;
 }
 .adUp-banner .coupon{
+    border-radius: 5px;
     width: 50%;
-    height: 100px;
-    background-color: #58bcff;
+    height: 190px;
+    background: url("../images/ad-banner/1-banner.png") no-repeat center;
+    background-size: cover;
 }
 
